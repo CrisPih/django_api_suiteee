@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     "homepage",
     "landing_api",
     "demo_rest_api",
+]
+
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
