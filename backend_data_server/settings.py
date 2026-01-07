@@ -44,9 +44,8 @@ INSTALLED_APPS = [
     "firebase_admin",
     "rest_framework",
     "homepage",
+    "landing_api",
     "demo_rest_api",
-]
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -82,7 +81,7 @@ FIREBASE_CREDENTIALS_PATH = credentials.Certificate("secrets/landing-key.json")
 
 # Inicialice la conexión con el Realtime Database con la clave privada y la URL de referencia
 firebase_admin.initialize_app(FIREBASE_CREDENTIALS_PATH, {
-   'databaseURL': 'https://<PROJECT-ID>-default-rtdb.firebaseio.com/'
+   'databaseURL': 'https://deforestacion-c55a1-default-rtdb.firebaseio.com/'
 })
 
 # Database
